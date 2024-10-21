@@ -6,9 +6,13 @@ from fraud_detection.models.transaction import Transaction
 from fraud_detection.serializers import TransactionSerializer
 from django.shortcuts import get_object_or_404
 from django.views import View
+from django.shortcuts import render  # Ensure this import is included
+ 
 
 class HomeView(View):
-    template_name = 'index.html'  # Ensure this template exists in your templates directory
+    template_name = 'index.html'  # Ensure this tem
+    def get(self, request):
+        return render(request, self.template_name)
 
 
 # List all transactions for the authenticated user
