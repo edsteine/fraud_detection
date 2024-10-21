@@ -1,10 +1,11 @@
 from django.urls import path
 from .views.auth_views import UserRegistrationView, LogoutView, LoginView, UserProfileView
-from .views.api_views import TransactionListView, TransactionDetailView, TransactionCreateView, TransactionProcessView, CheckFraudView
+from .views.api_views import TransactionListView, TransactionDetailView, TransactionCreateView, TransactionProcessView, CheckFraudView ,HomeView
 
 urlpatterns = [
     # Home view
     path('', HomeView.as_view(), name='home'),  # Add this line for the home view
+    
 
     # User authentication
     path('register/', UserRegistrationView.as_view(), name='user_registration'),
