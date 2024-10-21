@@ -5,6 +5,11 @@ from rest_framework.views import APIView
 from fraud_detection.models.transaction import Transaction
 from fraud_detection.serializers import TransactionSerializer
 from django.shortcuts import get_object_or_404
+from django.views import View
+
+class HomeView(View):
+    template_name = 'index.html'  # Ensure this template exists in your templates directory
+
 
 # List all transactions for the authenticated user
 class TransactionListView(generics.ListAPIView):
