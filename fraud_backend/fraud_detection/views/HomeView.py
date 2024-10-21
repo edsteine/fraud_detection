@@ -1,5 +1,4 @@
-# fraud_detection/views/HomeView.py
-from django.views.generic import TemplateView
+from django.views import View
 
-class HomeView(TemplateView):
+class HomeView(View):
     template_name = 'index.html'  # Ensure this template exists in your templates directory
