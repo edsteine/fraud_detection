@@ -101,4 +101,3 @@ class TransactionProcessView(APIView):
             {"errors": serializer.errors},
             status=status.HTTP_400_BAD_REQUEST  # 400 for bad request
         )
-
