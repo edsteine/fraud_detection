@@ -44,10 +44,12 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'fraud_detection_project.urls'
 
 # Templates
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # Path to your templates directory
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # Make sure this path is correct
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
