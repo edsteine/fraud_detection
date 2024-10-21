@@ -1,7 +1,7 @@
 from django.urls import path
 from .views.auth_views import UserRegistrationView, LogoutView, LoginView, UserProfileView
 from .views.api_views import TransactionListView, TransactionDetailView, TransactionCreateView, TransactionProcessView, CheckFraudView
-from .views.HomeView import HomeView  # Import HomeView here
+from .views import HomeView  # Make sure this is correct
 
 urlpatterns = [
     # Home view
